@@ -1,0 +1,99 @@
+@use 'config' as *;
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container {
+  width: 950px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-container {
+  position: relative;
+}
+
+.p-secondary {
+  font-size: 0.7rem;
+  color: $color;
+}
+
+.p-primary {
+  font-size: 0.8rem;
+}
+
+.section-title {
+  font-size: 0.8rem;
+  color: $color;
+}
+
+.section-title-light {
+  color: #fff;
+  background-color: black;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.section-sub-title {
+  font-size: 0.7rem;
+  color: #333;
+}
+
+.blue {
+  color: rgb(0, 153, 255);
+  font-weight: bolder;
+}
+
+.user-light {
+  font-size: 0.7rem;
+  color: #333;
+}
+
+.user {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-bold {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.4rem;
+}
+
+.user-img {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}

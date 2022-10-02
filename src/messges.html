@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/88eeb91d4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Noto+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inbox &bull; Direct</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="header" class="mq-messages-nav">
+      <nav id="nav">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <img src="./img/logo.png" alt="" class="logo" />
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search" class="input-search" />
+          </div>
+          <ul class="navbar">
+            <li class="navbar-icon feed">
+              <a href="./feed.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="navbar-icon messages">
+              <a href="messges.html"
+                ><i class="fa-regular fa-paper-plane"></i
+              ></a>
+            </li>
+            <li class="navbar-icon post">
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li class="navbar-icon explore">
+              <a href="./explore.html"><i class="fa-regular fa-compass"></i></a>
+            </li>
+            <li class="navbar-icon likes">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </li>
+            <li class="navbar-icon profile">
+              <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Messages Layout -->
+    <main id="main-messages">
+      <div class="user-container">
+        <div id="messages">
+          <div class="messages-content-a">
+            <div class="section-header">
+              <div class="user-id">
+                <p class="user">user123</p>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+              <div class="new"><i class="fa-regular fa-pen-to-square"></i></div>
+            </div>
+            <div class="inbox">
+              <div class="inbox-item">
+                <img src="./img/example.png" alt="" class="user-img" />
+                <div class="section">
+                  <p class="user-light">Jane Doe</p>
+                  <div class="inbox-preview">
+                    <p class="p-secondary">Hello!</p>
+                    <p class="p-secondary time-stamp">&middot; 1 m</p>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox-item">
+                <img src="./img/example.png" alt="" class="user-img" />
+                <div class="section">
+                  <p class="user-light">John Doe</p>
+                  <div class="inbox-preview">
+                    <p class="p-secondary">Hello!</p>
+                    <p class="p-secondary time-stamp">&middot; 1 m</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="messages-content-b">
+            <div class="section-header">
+              <div class="section-header-a">
+                <img src="./img/example.png" alt="" class="user-img" />
+                <p class="user">user567</p>
+              </div>
+              <div class="section-header-b">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <div><i class="fa-solid fa-video"></i></div>
+                <div><i class="fa-solid fa-info"></i></div>
+              </div>
+            </div>
+            <div class="chatroom">
+              <div class="time">9:10 PM</div>
+              <ul class="text-messages">
+                <li class="message">hey</li>
+              </ul>
+              <div class="message-input">
+                <div class="message-input-a">
+                  <div><i class="fa-regular fa-face-smile"></i></div>
+                  <input type="text" placeholder="Message..." />
+                </div>
+                <div class="message-input-b">
+                  <div><i class="fa-solid fa-image"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Media Query -->
+      <div class="messages-header">
+        <div class="search-bar-mq">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="input-search" />
+        </div>
+        <ul class="message-type">
+          <li class="message-type-item p-secondary current">All</li>
+          <li class="message-type-item p-secondary">Calls</li>
+          <li class="message-type-item p-secondary">Requests</li>
+        </ul>
+        <div class="back-to-main"><i class="fa-solid fa-chevron-left"></i></div>
+      </div>
+    </main>
+  </body>
+</html>

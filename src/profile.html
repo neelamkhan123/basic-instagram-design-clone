@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/88eeb91d4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Noto+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>@user123 &bull; Instagram photos and videos</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="header" class="mq-profile-nav">
+      <nav id="nav">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <img src="./img/logo.png" alt="" class="logo" />
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search" class="input-search" />
+          </div>
+          <ul class="navbar">
+            <li class="navbar-icon feed">
+              <a href="./feed.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="navbar-icon messages">
+              <a href="./messges.html"
+                ><i class="fa-regular fa-paper-plane"></i
+              ></a>
+            </li>
+            <li class="navbar-icon post">
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li class="navbar-icon explore">
+              <a href="./explore.html"><i class="fa-regular fa-compass"></i></a>
+            </li>
+            <li class="navbar-icon likes">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </li>
+            <li class="navbar-icon profile">
+              <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Site Navigation -->
+      <div class="navigation">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </div>
+    </header>
+
+    <!-- Main Profile Layout -->
+    <main id="main-profile">
+      <div class="user-container">
+        <div id="profile">
+          <div class="profile-content-a">
+            <div class="user-img"><i class="fa-solid fa-user"></i></div>
+            <div class="user-data">
+              <div class="user-data-a">
+                <p class="p-primary">user123</p>
+                <div class="section">
+                  <button class="edit">Edit Profile</button>
+                  <button class="settings">
+                    <i class="fa-solid fa-gear"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="user-data-b">
+                <div class="posts data"><span class="bold">0</span> posts</div>
+                <div class="followers data">
+                  <span class="bold">0</span> followers
+                </div>
+                <div class="following data">
+                  <span class="bold">0</span> following
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-content-b">
+            <div class="section-header">
+              <ul class="post-type">
+                <li class="post-type-item posts">
+                  <div><i class="fa-solid fa-table-cells"></i></div>
+                  <p class="p-secondary">POSTS</p>
+                </li>
+                <li class="post-type-item saved">
+                  <div><i class="fa-regular fa-bookmark"></i></div>
+                  <p class="p-secondary">SAVED</p>
+                </li>
+                <li class="post-type-item tagged">
+                  <div><i class="fa-regular fa-id-badge"></i></div>
+                  <p class="p-secondary">TAGGED</p>
+                </li>
+              </ul>
+            </div>
+            <div class="user-posts">
+              <div class="user-post user-post-1"></div>
+              <div class="user-post user-post-2"></div>
+              <div class="user-post user-post-3"></div>
+              <div class="user-post user-post-4"></div>
+              <div class="user-post user-post-5"></div>
+              <div class="user-post user-post-6"></div>
+              <div class="user-post user-post-7"></div>
+              <div class="user-post user-post-8"></div>
+              <div class="user-post user-post-9"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Media Query -->
+      <nav id="footer-nav" class="mq">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list-item">
+            <a href="./feed.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="./explore.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="./reels-mq.html"
+              ><i class="fa-solid fa-clapperboard"></i
+            ></a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="./shop-mq.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <li class="footer-nav-list-item profile">
+            <a href="./profile.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Profile Nav mq -->
+      <nav class="profile-nav-mq">
+        <p class="user-bold">user123</p>
+        <div class="icons">
+          <div class="post">
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+          </div>
+          <div><i class="fa-solid fa-bars"></i></div>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>

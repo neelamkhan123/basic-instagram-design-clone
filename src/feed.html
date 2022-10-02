@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/88eeb91d4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Noto+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="header">
+      <nav id="nav">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <img src="./img/logo.png" alt="" class="logo" />
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search" class="input-search" />
+          </div>
+          <ul class="navbar">
+            <li class="navbar-icon feed">
+              <a href="feed.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="navbar-icon messages">
+              <a href="./messges.html"
+                ><i class="fa-regular fa-paper-plane"></i
+              ></a>
+            </li>
+            <li class="navbar-icon post">
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li class="navbar-icon post-mq">
+              <a href="./post-mq.html"><i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li class="navbar-icon explore">
+              <a href="./explore.html"><i class="fa-regular fa-compass"></i></a>
+            </li>
+            <li class="navbar-icon likes">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </li>
+
+            <li class="navbar-icon profile">
+              <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Feed Layout -->
+    <main id="main-feed">
+      <div class="user-container">
+        <div id="feed">
+          <!-- Feed A: Stories -->
+          <div class="feed-content-a">
+            <ul class="story">
+              <li class="story-icon">
+                <div class="img-border">
+                  <img src="./img/example.png" alt="" class="icon" />
+                </div>
+                <p class="user-light">user567</p>
+              </li>
+              <li class="story-icon">
+                <div class="img-border">
+                  <img src="./img/example.png" alt="" class="icon" />
+                </div>
+                <p class="user-light">user567</p>
+              </li>
+              <li class="story-icon">
+                <div class="img-border">
+                  <img src="./img/example.png" alt="" class="icon" />
+                </div>
+                <p class="user-light">user567</p>
+              </li>
+              <li class="story-icon">
+                <div class="img-border">
+                  <img src="./img/example.png" alt="" class="icon" />
+                </div>
+                <p class="user-light">user567</p>
+              </li>
+              <li class="story-icon">
+                <div class="img-border">
+                  <img src="./img/example.png" alt="" class="icon" />
+                </div>
+                <p class="user-light">user567</p>
+              </li>
+              <li class="story-icon">
+                <div class="img-border">
+                  <img src="./img/example.png" alt="" class="icon" />
+                </div>
+                <p class="user-light">user568</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feed B: Switch User -->
+          <div class="feed-content-b">
+            <div class="section">
+              <div><i class="fa-solid fa-user"></i></div>
+              <p class="user">user123</p>
+            </div>
+            <p class="blue">Switch</p>
+          </div>
+
+          <!-- Feed C: User Suggestions -->
+          <div class="feed-content-c">
+            <div class="section-header">
+              <h5 class="section-title">Suggestions for you</h5>
+              <h6 class="section-sub-title">See all</h6>
+            </div>
+            <ul class="suggested">
+              <li class="suggested-user">
+                <div class="section">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <div class="user-id">
+                    <p class="user">user456</p>
+                    <p class="p-secondary">Followed by user890</p>
+                  </div>
+                </div>
+                <p class="blue">Follow</p>
+              </li>
+
+              <li class="suggested-user">
+                <div class="section">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <div class="user-id">
+                    <p class="user">user456</p>
+                    <p class="p-secondary">Followed by user890</p>
+                  </div>
+                </div>
+                <p class="blue">Follow</p>
+              </li>
+
+              <li class="suggested-user">
+                <div class="section">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <div class="user-id">
+                    <p class="user">user456</p>
+                    <p class="p-secondary">Instagram recommended</p>
+                  </div>
+                </div>
+                <p class="blue">Follow</p>
+              </li>
+
+              <li class="suggested-user">
+                <div class="section">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <div class="user-id">
+                    <p class="user">user456</p>
+                    <p class="p-secondary">Instagram recommended</p>
+                  </div>
+                </div>
+                <p class="blue">Follow</p>
+              </li>
+
+              <li class="suggested-user">
+                <div class="section">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <div class="user-id">
+                    <p class="user">user456</p>
+                    <p class="p-secondary">Followed by user890</p>
+                  </div>
+                </div>
+                <p class="blue">Follow</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feed D: Feed Footer -->
+          <div class="feed-content-d">
+            <ul class="feed-footer">
+              <li class="feed-footer-item">
+                <span class="middot">About</span>&middot;
+              </li>
+              <li class="feed-footer-item">
+                <span class="middot">Help</span>&middot;
+              </li>
+              <li class="feed-footer-item">
+                <span class="middot">Press</span>&middot;
+              </li>
+              <li class="feed-footer-item">
+                <span class="middot">API</span>&middot;
+              </li>
+              <li class="feed-footer-item">
+                <span class="middot">Jobs</span>&middot;
+              </li>
+              <li class="feed-footer-item">
+                <span class="middot">Privacy</span>&middot;
+              </li>
+              <li class="feed-footer-item">
+                <span class="middot">Locations</span>&middot;
+              </li>
+            </ul>
+            <ul class="feed-footer">
+              <li class="feed-footer-item">Language</li>
+            </ul>
+            <p class="p-secondary">&copy; 2022 INSTAGRAM FROM META</p>
+          </div>
+
+          <!-- Feed E: User Feed -->
+          <div class="feed-content-e">
+            <div class="posts">
+              <div class="post">
+                <!-- User Label -->
+                <div class="user-label">
+                  <div>
+                    <img src="./img/example.png" alt="" class="user-img" />
+                    <p class="user">user123</p>
+                  </div>
+                  <div><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <!-- Image Post -->
+                <img src="./img/example.png" alt="" class="post-img" />
+                <!-- Post Interaction -->
+                <div class="interact">
+                  <div class="interact-a">
+                    <div><i class="fa-regular fa-heart"></i></div>
+                    <div><i class="fa-regular fa-comment"></i></div>
+                    <div><i class="fa-regular fa-paper-plane"></i></div>
+                  </div>
+                  <div class="interact-b">
+                    <div><i class="fa-regular fa-bookmark"></i></div>
+                  </div>
+                </div>
+                <!-- Likes -->
+                <div class="liked-by">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <p>
+                    Liked by <span class="user">user456</span> and
+                    <span class="user">4,536 others</span>
+                  </p>
+                </div>
+                <!-- Caption -->
+                <div class="caption">
+                  <p class="user">user567</p>
+                  <p>Hello, instagram 😀</p>
+                </div>
+                <!-- View Comments -->
+                <p class="p-secondary view-comments">View all 56 comments</p>
+                <!-- Time Posted -->
+                <p class="p-secondary time">1 HOUR AGO</p>
+                <!-- Add Comments -->
+                <div class="add-comment">
+                  <div class="add-comment-a">
+                    <div><i class="fa-regular fa-face-smile"></i></div>
+                    <input
+                      type="text"
+                      class="comment"
+                      placeholder="Add a comment..."
+                    />
+                  </div>
+                  <div class="add-comment-b">
+                    <p class="blue">Post</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <!-- User Label -->
+                <div class="user-label">
+                  <div>
+                    <img src="./img/example.png" alt="" class="user-img" />
+                    <p class="user">user123</p>
+                  </div>
+                  <div><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <!-- Image Post -->
+                <img src="./img/example.png" alt="" class="post-img" />
+                <!-- Post Interaction -->
+                <div class="interact">
+                  <div class="interact-a">
+                    <div><i class="fa-regular fa-heart"></i></div>
+                    <div><i class="fa-regular fa-comment"></i></div>
+                    <div><i class="fa-regular fa-paper-plane"></i></div>
+                  </div>
+                  <div class="interact-b">
+                    <div><i class="fa-regular fa-bookmark"></i></div>
+                  </div>
+                </div>
+                <!-- Likes -->
+                <div class="liked-by">
+                  <img src="./img/example.png" alt="" class="user-img" />
+                  <p>
+                    Liked by <span class="user">user456</span> and
+                    <span class="user">4,536 others</span>
+                  </p>
+                </div>
+                <!-- Caption -->
+                <div class="caption">
+                  <p class="user">user567</p>
+                  <p>Hello, instagram 😀</p>
+                </div>
+                <!-- View Comments -->
+                <p class="p-secondary view-comments">View all 56 comments</p>
+                <!-- Time Posted -->
+                <p class="p-secondary time">1 HOUR AGO</p>
+                <!-- Add Comments -->
+                <div class="add-comment">
+                  <div class="add-comment-a">
+                    <div><i class="fa-regular fa-face-smile"></i></div>
+                    <input
+                      type="text"
+                      class="comment"
+                      placeholder="Add a comment..."
+                    />
+                  </div>
+                  <div class="add-comment-b">
+                    <p class="blue">Post</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Media Query -->
+      <nav id="footer-nav" class="mq">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list-item">
+            <a href="feed.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="./explore.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="./reels-mq.html"
+              ><i class="fa-solid fa-clapperboard"></i
+            ></a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="./shop-mq.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <li class="footer-nav-list-item profile">
+            <a href="./profile.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>

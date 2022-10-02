@@ -1,0 +1,96 @@
+@use 'config' as *;
+@use 'utilities' as *;
+
+#footer {
+  .footer {
+    &-a {
+      margin-bottom: 1rem;
+      .footer-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.4rem;
+
+        &-item {
+          margin-right: 1rem;
+
+          white-space: nowrap;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-b {
+      display: flex;
+      justify-content: center;
+
+      select {
+        border: none;
+        outline: none;
+        margin-right: 1rem;
+        color: $color;
+        background-color: $bg;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+// Footer Nav
+#footer-nav {
+  display: none;
+}
+
+// Media Queries
+
+// Mobile
+@media (max-width: 415px) and (max-height: 897px) {
+  #footer-nav {
+    display: block;
+    z-index: 1;
+    position: relative;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: $border;
+    height: 77px;
+
+    .footer-nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-item {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+        margin: 0.5rem 2.5rem 0.5rem 0;
+
+        a {
+          color: black;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .profile {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border: 3px solid black;
+        height: 25px;
+        width: 25px;
+        padding: 0.3rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .fa-user {
+          font-size: 1.3rem;
+          position: relative;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}

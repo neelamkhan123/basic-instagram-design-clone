@@ -1,0 +1,222 @@
+@use 'config' as *;
+@use 'utilities' as *;
+
+#header {
+  position: relative;
+
+  #nav {
+    background-color: #fff;
+    border-bottom: $border;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    .nav-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 74%;
+      padding-top: 0.3rem;
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 125px;
+
+        .logo {
+          width: 110px;
+          height: 40px;
+        }
+
+        .fa-solid {
+          margin-bottom: 0.9rem;
+          font-size: 0.7rem;
+          color: #333;
+        }
+      }
+
+      .search-bar {
+        position: relative;
+        left: 75px;
+        display: flex;
+        width: 270px;
+        height: 37px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 7px;
+
+        .fa-magnifying-glass {
+          color: $color;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding-left: 1rem;
+        }
+
+        input {
+          padding: 0 0.5rem;
+          background-color: rgb(238, 238, 238);
+          border: none;
+          outline: none;
+          border-radius: 7px;
+          font-size: 0.9rem;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 0.2rem;
+
+          &::placeholder {
+            font-weight: lighter;
+          }
+        }
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+
+        &-icon {
+          font-size: 1.4rem;
+          margin-right: 1.5rem;
+
+          a {
+            color: black;
+          }
+        }
+
+        .post {
+          border: 2.5px solid black;
+          border-radius: 10px;
+          padding: 0 0.2rem;
+          font-size: 1rem;
+
+          a {
+            cursor: default;
+            font-size: 1rem;
+          }
+        }
+
+        .post-mq {
+          display: none;
+        }
+
+        .likes {
+          a {
+            cursor: default;
+          }
+        }
+
+        .profile {
+          background-color: $border-color;
+          border-radius: 50%;
+          border: $border;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          overflow: hidden;
+
+          a {
+            font-size: 1.4rem;
+            color: #fff;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+// Mobile
+@media (max-width: 415px) and (max-height: 897px) {
+  #header {
+    #nav {
+      width: 414px;
+
+      .nav-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        padding-top: 1rem;
+        height: 62px;
+
+        .nav-logo {
+          height: auto;
+          width: auto;
+
+          .logo {
+            height: 50px;
+            width: 140px;
+          }
+
+          .fa-solid {
+            margin-bottom: 0.4rem;
+            margin-left: 0.3rem;
+          }
+        }
+
+        .search-bar {
+          display: none;
+        }
+
+        .navbar {
+          flex-direction: row-reverse;
+          width: 100%;
+
+          .feed {
+            display: none;
+          }
+
+          .explore {
+            display: none;
+          }
+
+          .profile {
+            display: none;
+          }
+
+          .messages {
+            margin-right: 0;
+          }
+
+          .likes {
+            position: relative;
+            left: 48px;
+            font-size: 1.5rem;
+          }
+
+          .post {
+            display: none;
+          }
+
+          .post-mq {
+            display: block;
+            position: relative;
+            right: 48px;
+            border: 2.5px solid black;
+            padding: 0rem 0.2rem;
+            border-radius: 7px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      rotate: 180deg;
+      right: 150px;
+      top: 24px;
+    }
+  }
+}
